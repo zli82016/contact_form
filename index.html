@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700" />
+	<script src="ui.js"></script>
+</head>
+<body class="core">
+	<header>
+		<h1 class="logo">Logo</h1>
+		<input class="search" type="text" name="search" placeholder="Search" />
+		<nav class="nav">
+			<ul>
+				<li><a href="#">Destinations</a></li>
+				<li><a class="current" href="#">Contact</a></li>
+				<li><a href="#">About</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="main">
+		<img class="contactLogo" src="./assets/Contact.png" alt="contact" />
+		<div class="contactContent">
+			<div id="successMsg" class="hidden">
+				<img src="./assets/stamp.png"  alt="stamp" />
+				<p>Thank you for reaching out.<br>Your message has been sent!</p>
+			</div> 
+			<form name="contactForm" class="contactForm">
+				<input type="email" name="email" class="email msg" placeholder="Email" /><br>
+				<input type="text" name="fullname" class="msg" placeholder="Full Name" /><br>
+				<textarea name="message" maxlength="300" class="msg" placeholder="Message (300 characters limit)"></textarea><br>
+				<input type="submit" value="Send" name="send" class="sendBtn inactiveSendBtn" disabled />
+			</form>
+		</div>
+	</div>
+</body>
+</html>
